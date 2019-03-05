@@ -1,0 +1,20 @@
+.post {
+  h1 {
+    @extend .postTitle;
+    margin-bottom: $defaultSpacer;
+  }
+  
+  h2 {
+    @extend .sectionTitle;
+    margin-bottom: $defaultSpacer / 2;
+  }
+  
+  p {
+    @extend .prose;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,170 @@
+/* TYPE */
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('/assets/fonts/axiforma-book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('/assets/fonts/axiforma-book-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('/assets/fonts/axiforma-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('/assets/fonts/axiforma-black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+$bodyFontFamily: 'Axiforma', Axiforma, Brandon Grotesque, Futura, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// Font Sizes
+$fontSize-smallest: 0.625rem; // 10px
+$fontSize-smaller: 0.8125rem; // 13px
+$fontSize-small: .9375rem; //15px
+$fontSize-base: 1rem; // 16px
+$fontSize-lede: 1.25rem; // 20px
+$fontSize-large: 1.5rem; // 24px
+$fontSize-larger: 1.9375rem; // 31px
+$fontSize-jumbo: 2.5rem; // 40px
+$fontSize-yuge: 4.5rem; // 45px
+
+// Font Weights
+$fontWeight-normal: 400;
+$fontWeight-bold: 700;
+$fontWeight-black: 800;
+
+// Line Heights
+$lineHeight-tight: 1;
+$lineHeight-base: 1.125;
+$lineHeight-prose: 1.8;
+
+
+// Type Styles
+.pageTitle {
+  font-size: $fontSize-jumbo;
+  font-weight: $fontWeight-black;
+  line-height: $lineHeight-base;
+  text-transform: uppercase;
+
+  @include lg {
+    font-size: $fontSize-yuge;
+  }
+}
+
+.postTitle {
+  font-size: $fontSize-large;
+  font-weight: $fontWeight-black;
+  line-height: $lineHeight-base;
+  text-transform: uppercase;
+
+  @include lg {
+    font-size: $fontSize-larger;
+  }
+}
+
+.sectionTitle {
+  font-size: $fontSize-lede;
+  font-weight: $fontWeight-bold;
+  line-height: $lineHeight-base;
+  margin-bottom: 1rem;
+  
+  @include lg {
+    font-size: $fontSize-large;
+  }
+}
+
+.listTitle {
+  font-size: $fontSize-base;
+  font-weight: $fontWeight-bold;
+  line-height: $lineHeight-base;
+  margin: 2rem 0 .25rem 0;
+  
+  @include lg {
+    font-size: $fontSize-lede;
+  }
+}
+
+.copy {
+  font-size: $fontSize-base;
+
+  @include lg {
+    font-size: $fontSize-lede;
+  }
+}
+
+.prose {
+  font-size: $fontSize-small;
+  line-height: $lineHeight-prose;
+  margin-bottom: 1em;
+}
+
+.lede {
+  font-size: $fontSize-lede;
+  line-height: $lineHeight-base;
+
+  @include lg {
+    font-size: $fontSize-large;
+  }
+}
+
+strong {
+  font-weight: $fontWeight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $blue;
+  font-weight: $fontWeight-bold;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gold;
+  }
+}
+
+.aside {
+  font-size: inherit;
+  font-style: italic;
+  color: $darkGray;
+}
+
+blockquote {
+  font-size: $fontSize-lede;
+  line-height: $lineHeight-prose;
+  font-style: italic;
+  text-align: left;
+  
+  @include md {
+    font-size: $fontSize-larger;
+  }
+  
+  cite {
+    display: block;
+    font-size: $fontSize-smaller;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: $defaultSpacer;
+  }
+}
+
+small {
+  font-size: $fontSize-smallest;
+  color: $gray;
+}

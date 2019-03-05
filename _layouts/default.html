@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
-  <body class="{{ page.id }}">
-
-    {%- include header.html -%}
-
-    <main>
-      {{ content }}
-    </main>
-
-    {%- include footer.html -%}
-
-  </body>
-
+{%- include head.html -%}
+<body class="{{ page.id }}">
+  {{ content }}
+</body>
 </html>

@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<div class="page">
-  <div class="heroStripe">
-    <div class="container">
-      {{ content }}
-    </div>
-  </div>
-</div>
+
+{%- include header.html -%}
+<main>
+  {{ content }}
+</main>
+{%- include footer.html -%}

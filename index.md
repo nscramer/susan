@@ -1,6 +1,5 @@
 ---
 layout: home
-
 ---
 Susan Elizabeth Cramer
 

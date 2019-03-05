@@ -1,0 +1,61 @@
+.siteHeader {
+  padding: ($defaultSpacer * 2) 0;
+  margin-bottom: $defaultSpacer * 2;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      
+      .logo {
+        margin-right: .5rem;
+        position: relative;
+        bottom: .125rem;
+      }
+    }
+  
+    nav {
+      display: inline-block;
+      ul {
+        display: inline-block;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin-right: $defaultSpacer * 1.5;
+
+          a {
+
+            &.current {
+              border-bottom: 3px solid $hoverTypeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+
+
+  a {
+    font-size: $fontSize-smallest;
+    font-weight: $fontWeight-bold;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    
+    display: inline-block;
+    color: $defaultTypeColor;
+    padding-bottom: .25rem;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hoverTypeColor;
+    }
+  }
+}

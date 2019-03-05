@@ -1,0 +1,73 @@
+// MIXINS
+
+
+// MEDIA QUERIES
+
+// Small tablets and large smartphones (landscape view)
+// Use with @include sm { }
+$screen-sm-min: 576px;
+
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+
+// Small tablets (portrait view)
+// Use with @include md { }
+$screen-md-min: 768px;
+
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+
+// Tablets and small desktops
+// Use with @include lg { }
+$screen-lg-min: 992px;
+
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+
+// Large tablets and desktops
+// Use with @include xl { }
+$screen-xl-min: 1200px;
+
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+
+// Tiny smartphones like iPhone SE (portrait view)
+// Use with @include se { }
+$screen-se-max: 320px;
+
+@mixin se {
+   @media (max-width: #{$screen-se-max}) {
+       @content;
+   }
+}
+
+
+// Custom devices
+// Use with @include rwd(###)
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

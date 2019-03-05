@@ -1,0 +1,35 @@
+/* COLORS */
+
+// Colors
+$black: #000;
+$almostBlack: #363638;
+$darkGray: #737476;
+$gray: #E2E2E2;
+$lightGray: #F5F6F8;
+$almostWhite: #FCFCFD;
+$white: #FFFFFF;
+$blue: #026294;
+$gold: #B8AB8C;
+
+// Default Spacer
+$defaultSpacer: 2rem;
+
+// Type
+$defaultTypeColor: $almostBlack;
+$mutedTypeColor: $darkGray;
+$inverseTypeColor: $white;
+$linkTypeColor: $blue;
+$hoverTypeColor: $gold;
+
+// Logo
+.logo {
+  width: $defaultSpacer;
+  height: $defaultSpacer;
+  display: inline-block;
+  background-color: transparent;
+  background-image: url("/assets/images/logo-gold.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  text-indent: -99999px;
+  overflow: hidden;
+}
