@@ -3,27 +3,23 @@
     <h1>
       <a class="wordmark" href="/">
         <span class="logo"></span>
-        <span>Desk of Susan</span>
+        <span class="name">Desk of Susan</span>
       </a>
     </h1>
 
     <nav>
       <ul>
-        <li>
-          <a class="current" href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Journal</a>
-        </li>
-        <li>
-          <a href="#">Photos</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Now</a>
-        </li>
+        {% for item in site.navigation %}
+          {% assign class = nil %}
+          {% if page.url contains item.url %}
+              {% assign class = 'current' %}
+          {% endif %}
+          <li>
+            <a href="{{ item.url }}" class="{{ class }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
   </div>

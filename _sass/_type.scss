@@ -57,7 +57,7 @@ $lineHeight-prose: 1.8;
   font-size: $fontSize-jumbo;
   font-weight: $fontWeight-black;
   line-height: $lineHeight-base;
-  text-transform: uppercase;
+//  text-transform: uppercase;
 
   @include lg {
     font-size: $fontSize-yuge;
@@ -65,19 +65,19 @@ $lineHeight-prose: 1.8;
 }
 
 .postTitle {
-  font-size: $fontSize-large;
+  font-size: $fontSize-larger;
   font-weight: $fontWeight-black;
   line-height: $lineHeight-base;
-  text-transform: uppercase;
+//  text-transform: uppercase;
 
   @include lg {
-    font-size: $fontSize-larger;
+    font-size: $fontSize-yuge;
   }
 }
 
 .sectionTitle {
   font-size: $fontSize-lede;
-  font-weight: $fontWeight-bold;
+  font-weight: $fontWeight-black;
   line-height: $lineHeight-base;
   margin-bottom: 1rem;
   
@@ -97,18 +97,25 @@ $lineHeight-prose: 1.8;
   }
 }
 
-.copy {
-  font-size: $fontSize-base;
-
-  @include lg {
-    font-size: $fontSize-lede;
-  }
-}
-
 .prose {
   font-size: $fontSize-small;
   line-height: $lineHeight-prose;
   margin-bottom: 1em;
+  
+  @include lg {
+    font-size: $fontSize-base;
+  }
+}
+
+.postSubtitle {
+  font-size: $fontSize-lede;
+  line-height: $lineHeight-base;
+  font-weight: $fontWeight-normal;
+  font-style: italic;
+
+  @include lg {
+    font-size: $fontSize-large;
+  }
 }
 
 .lede {
@@ -129,14 +136,21 @@ em {
 }
 
 a {
-  color: $blue;
-  font-weight: $fontWeight-bold;
-  
   &:hover,
   &:focus,
   &:active {
     color: $gold;
   }
+}
+
+p {
+  a {
+    box-shadow: inset 0 -2px 0 $gold;
+  }
+}
+
+::selection {
+  background: #ffff66;
 }
 
 .aside {

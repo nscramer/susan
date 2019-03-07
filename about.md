@@ -1,18 +1,13 @@
 ---
-layout: page
-title: About
+layout: post
+title: About Susan
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![Susan and her husband Nick](/assets/images/about.jpg "Susan and her husband Nick")
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Welcome! I'm Susan, just a normal gal born & bred in Cincinnati, OH. Currently, I’m still living in the queen city with my [husband](http://nicolasscott.com/) and our [golden retriever](https://www.instagram.com/captainfitz_/) while working to help brands solve meaningful problems for consumers. Simply put, this website is my outlet for all things on my mind. Expect to see photos I’ve taken, hear about books I’m reading, projects I'm working on, and a little bit of my daily life just for kicks.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Thanks for stopping by! 
 
-
-[jekyll-organization]: https://github.com/jekyll
+say hi: thedeskofsusan-at-gmail.com

@@ -1,6 +1,11 @@
 .siteHeader {
-  padding: ($defaultSpacer * 2) 0;
-  margin-bottom: $defaultSpacer * 2;
+  padding: $defaultSpacer 0;
+  margin-bottom: $defaultSpacer;
+  
+  @include md {
+    padding: ($defaultSpacer * 2) 0;
+    margin-bottom: $defaultSpacer * 2;
+  }
 
   .container {
     display: flex;
@@ -12,21 +17,46 @@
       align-items: center;
       
       .logo {
-        margin-right: .5rem;
-        position: relative;
-        bottom: .125rem;
+        width: $defaultSpacer * .75;
+        height: $defaultSpacer * .75;
+
+        @include md {
+          width: $defaultSpacer;
+          height: $defaultSpacer;
+          margin-right: .5rem;
+          position: relative;
+          bottom: .125rem;
+        }
+
+      }
+      
+      .name {
+        display: none;
+
+        @include md {
+          display: inline-block;
+        }
       }
     }
   
     nav {
-      display: inline-block;
+      display: block;
+
       ul {
-        display: inline-block;
         list-style: none;
+          display: inline-block;
 
         li {
           display: inline-block;
-          margin-right: $defaultSpacer * 1.5;
+          margin-right: .625rem;
+          
+          @include md {
+            margin-right: $defaultSpacer * 1.5;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
 
           a {
 
@@ -38,9 +68,6 @@
       }
     }
   }
-
-  
-
 
   a {
     font-size: $fontSize-smallest;

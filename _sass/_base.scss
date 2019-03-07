@@ -8,15 +8,23 @@ body {
   font-weight: $fontWeight-normal;
   font-style: normal;
   line-height: $lineHeight-base;
-    color: $almostBlack;
+  color: $almostBlack;
 }
 
 .container {
-  max-width: 37.5rem;
+  max-width: 45rem;
   margin: 0 auto;
+  padding: 0 ($defaultSpacer / 2);
+
+  @include md {
+    padding: 0 $defaultSpacer;
+  }
 
   &.container--lg {
-    max-width: 60rem;
+    max-width: 80rem;
   }
 }
 
+img {
+  max-width: 100%;
+}

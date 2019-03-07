@@ -28,6 +28,22 @@ collections:
     output: true
     permalink: /portfolio/:path/
   photos:
+    output: true
+    permalink: /photos/:path/
+
+# Navigation
+navigation:
+  - title: Portfolio
+    url: /portfolio/
+  - title: Journal
+    url: /journal/
+  - title: Photos
+    url: /photos/
+  - title: About
+    url: /about/
+  # - title: Now
+  #   url: /now/
+
 
 # Build settings
 markdown: kramdown
