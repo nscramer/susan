@@ -5,13 +5,11 @@ permalink: /photos/
 ---
 
 <div class="container container--lg">
-<ul>
+<ul class="photos">
   {% assign sorted_photos = site.photos | sort: 'rating', 'last' %}
   {% for photo in sorted_photos %}
     <li>
-      <a href="{{ photo.url | prepend: site.baseurl }}">
-        <img src="/assets/images/{{ photo.image }}" alt="{{ photo.title }}" />
-      </a>
+      <img src="/assets/images/{{ photo.image }}" alt="{{ photo.title }}" />
     </li>
   {% endfor %}
 </ul>

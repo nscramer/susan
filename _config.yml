@@ -28,8 +28,6 @@ collections:
     output: true
     permalink: /portfolio/:path/
   photos:
-    output: true
-    permalink: /photos/:path/
 
 # Navigation
 navigation:
