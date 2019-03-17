@@ -4,7 +4,17 @@ title: Journal
 permalink: /journal/
 ---
 
-<div class="container container--lg">
+<div class="container container--lg journal">
+  {% if page.title %}
+    <hgroup>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <h2>{{ page.subtitle }}</h2>
+      {% endif %}
+    </hgroup>
+  {% endif %} 
+  
+  
   <ul class="postList">
   {% for post in site.posts %}
     <li class="postList__item">
@@ -29,7 +39,7 @@ permalink: /journal/
               {% endfor %}
             </div>
           </div>
-        <h2 class="postList__item__title">{{ post.title }}</h2>
+        <h3 class="postList__item__title">{{ post.title }}</h3>
       </a>
     </li>
   {% endfor %}

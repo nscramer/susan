@@ -1,4 +1,21 @@
 .photos {
-  list-style: none;
-  text-align: center;
+  
+  // All this below should be pulled into a new layout file
+  h1 {
+    @extend .postTitle;
+    margin-bottom: $defaultSpacer;
+  }
+  
+  h2 {
+    @extend .sectionTitle;
+    margin-bottom: $defaultSpacer / 2;
+  }
+  
+  hgroup {
+    h2 {
+      margin-top: ($defaultSpacer / 2 * -1);
+      @extend .postSubtitle;
+      margin-bottom: $defaultSpacer * 2;
+    }
+  }
 }
