@@ -1,0 +1,56 @@
+/* JOURNAL */
+
+.postList {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.postList__item {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  @include md {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 4rem;
+    
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.postList__item__thumbWrap {
+  width: 100%;
+  padding-bottom: 57%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.postList__item__thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $lightGray;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+.postList__item__title {
+  font-size: $fontSize-smaller;
+  font-weight: $fontWeight-bold;
+  line-height: $lineHeight-base;
+  text-transform: uppercase;
+
+  @include lg {
+    font-size: $fontSize-small;
+  }
+}
