@@ -1,9 +1,7 @@
 ---
-layout: page
-title: Journal
+layout: home
+title: Desk of Susan
 permalink: /
 ---
 
-Susan Elizabeth Cramer
-
-Helping brands build meaningful connections with their consumers.![](/uploads/fullsizeoutput_5.jpeg)
+# Susan Elizabeth Cramer
